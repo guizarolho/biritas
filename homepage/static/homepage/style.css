@@ -163,6 +163,8 @@ p {
   background-color: var(--white);
   border-radius: 0.3em;
   padding: 1.5625em;
+  margin-bottom: 0.5625em;
+  margin-top: 0.5625em;
 }
 .tile > h4 {
   font-size: 1.2em;
