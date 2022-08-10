@@ -4,6 +4,7 @@ html {
   --pink: #fd8eb5;
   --bright-pink: #ffc6e3;
   --yellow: #fffac8;
+  --floral-white: rgb(255, 250, 240);
   --extra-light-gray: #F8F9FA;
   --white: #ffffff;
   --alice-blue: #F0F8FF;
@@ -23,7 +24,7 @@ body {
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
   line-height: 1.4;
-  background-color: var(--extra-light-gray);
+  background-color: var(--floral-white);
 }
 
 h1, h2, h3, h4 {
@@ -164,6 +165,7 @@ p {
   padding: 1.5625em;
 }
 .tile > h4 {
+  font-size: 1.2em;
   margin-bottom: 1em;
 }
 
