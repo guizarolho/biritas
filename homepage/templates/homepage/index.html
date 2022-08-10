@@ -1,0 +1,17 @@
+<body>
+  {% include 'homepage/navbar.html' %}
+  <div class="hero">
+    <div class="hero__inner">
+      <h2>Take a break! Have a drink!</h2>
+      <form method="POST" action="{% url 'homepage:detail' %}">
+        {% csrf_token %}
+        <input type="text" name="recipe" />
+        <input type="submit" value="Search" class="button button--cta" />
+      </form>
+    </div>
+  </div>
+  {% include 'homepage/columns.html' %}
+  {% include 'homepage/footer.html' %}
+</body>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'homepage/style.css' %}">

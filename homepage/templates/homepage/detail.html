@@ -1,0 +1,17 @@
+<div style="display: flex; flex-direction: column">
+  <h1 style="margin-bottom: 0px">
+    {{ drink }}
+  </h1>
+  <h6 style="margin: 0px 0px 15px 0px; color: darkblue;">
+    {{ alcoholic }}
+  </h6>
+  <img src="{{ image }}" width="15%"></img>
+  <ul style="padding-left: 25px">
+    {% for x, y in ingredients %}
+      <li style="font-size: 85%">
+        {{ x }} - <span style="color: darkblue">{{ y }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+  <p style="width: 15%">{{ instructions }}</p>
+</div>
